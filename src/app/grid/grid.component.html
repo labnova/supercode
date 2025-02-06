@@ -1,0 +1,10 @@
+<div class="grid">
+    <div 
+      class="grid-item" 
+      *ngFor="let number of numbers" 
+      [class.selected]="isSelected(number)"
+      (click)="toggleSelection(number)">
+      {{ number }}
+    </div>
+  </div>
+  
